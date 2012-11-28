@@ -1,0 +1,326 @@
+/*
+Theme Name: Blavatnik School of Government Digital Signage
+Theme URI: http://
+Description: Minimal them for the digital signage system of the Blavatnik School of Government
+Author: Marko Jung, Guido Klingbeil
+Author URI: http://siteorigin.com/
+Version: 0.0.1
+License: Proprietary
+License URI: http://
+*/
+
+/* =Reset.-------------------------------------------------------------- */
+
+
+html {
+    overflow: auto;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 24px;
+    color: #333;
+    font-family: 'Helvetica Neue', helvetica, Arial, sans-serif;
+}
+
+#main{
+    min-height: 10em;
+    height: 100%;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-height: 10em;
+    float: left;
+    overflow: hidden;
+}
+
+#container-page {
+//    cursor: none;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-height: 10em;
+    float: left;
+    overflow: hidden;
+}
+
+#sidebar{
+    width: 18em;
+    min-height: 10em;
+    height: 100%;
+    float: right;
+}
+
+#sidebar-header{
+    width: 100%;
+    min-width: 100%;
+    height: 7em;
+    margin: 0;
+    padding: 0 0 0 1em;
+    background-image: url(images/blavatnik-oxford-logo-background.jpg);
+    text-align: left;
+}
+
+#ox-logo{
+    float:left;
+    height: 3em;
+    width: 4em;
+    padding: 1.5em;
+    background-image: url(images/blavatnik-oxford-logo-background.jpg);
+}
+
+#logo{
+    width: 4em;
+    height: 4em;
+}
+
+#main-header{
+    height: 7em;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/blavatnik-body-background.jpg);
+}
+
+#bsg-logo {
+    float: left;
+}
+
+#bsg-logo-img{
+    height: 3em; 
+    padding: 2em 1.5em;
+}
+
+#datetime{
+    line-height: 4em;
+    font-size: 1.846em;
+    font-weight: 500;
+    color: white;
+}
+
+#infobox-container{
+    background-color: #F1F1F1;
+    height: 100%;
+    min-height: 100%;
+    margin-top: 0.063em;
+    color: black;
+    padding: 2em 1em 1.5em 1em;
+}
+
+#content-pane{
+    padding: 2em;
+    min-height: 100%;
+    height: 100%;
+}
+
+
+#footer-container {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    height: 3.5em;
+    padding: 1em 2em;
+    background-color: #aaa;
+    color: white;
+    overflow: hidden;
+}
+
+#footer {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 0.6em;
+}
+
+#footer span.meta {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+div.content, li.widget.events {
+
+}
+
+p {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    display: block;
+    font-size: 1.75em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #1D5DA4;
+    display: block;
+    font-size: 1.846em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    // font-weight: 300;
+    padding: 0;
+}
+
+h2 {
+    color: #1D5DA4;
+    display: block;
+    font-size: 1.74em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0.199em;
+    padding: 0;
+}
+
+h2.entry-title {
+    // height: 1.5em;
+}
+
+ul {
+    border-bottom-color: white;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-left-color: white;
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: white;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: white;
+    border-top-style: none;
+    border-top-width: 0px;
+    // color: white;
+    display: block;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1.5em;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 1em;
+    padding: 0;
+    text-align: left;
+}
+
+li {
+    display: list-item;
+    font-size: 1em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    // height: 1.231em;
+    line-height: 1.5em;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0.769em;
+    padding-left: 0;
+    padding-right: 0.154em;
+    padding-top: 0.692em;
+    text-align: left;
+    // width: 12.154em;
+}
+
+a {
+    color: #1D5DA4;
+    cursor: auto;
+    display: inline;
+    text-decoration: none;
+}
+
+a:link {
+    color: #1D5DA4;
+}
+
+
+/* 
+ * 
+ * SIDEBAR ELEMENTS 
+ *
+ */
+
+ul#widgets {
+    margin: 0;
+}
+
+ul#widgets li.widget {
+    padding-top: 0;
+    padding-right: 0;
+}
+
+/* 
+ *
+ * CALENDAR WIDGET 
+ *
+ */
+
+ul.iCalEvents li.iCalEventsItem {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+ul.iCalEvents span.eventListItemDateStart {
+    display:block;
+    color: #1D5DA4;
+    display: block;
+    font-size: 1.74em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    padding: 0;
+    height: 1.5em;
+    margin-top: 1em;
+}
+
+ul.iCalEvents span.eventListItemDateStart.first {
+    margin-top: 0;
+}
+
+ul.iCalEvents span.eventListItemSummary {
+    display:block;
+    font-weight: bold;
+}
+
+ul.iCalEvents span.eventListItemDescription {
+    display:block;
+    font-style:italic;
+}
+
+ul.iCalEvents span.eventListItemLocation {
+    display:block;
+    font-style:italic;
+    margin-bottom: 0.5em;
+}
