@@ -53,7 +53,8 @@ body{
 }
 
 #sidebar{
-    width: 18em;
+    width: 19em;
+    //width: 18em;
     min-height: 10em;
     height: 100%;
     float: right;
@@ -122,7 +123,7 @@ body{
 
 
 #footer-container {
-    visibility: hidden;
+    //visibility: hidden;
     z-index: 1;
     position: absolute;
     bottom: 0px;
@@ -233,7 +234,7 @@ ul {
 
 li {
     display: list-item;
-    font-size: 1em;
+    //font-size: 1em;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
@@ -268,7 +269,7 @@ a:link {
 
 /* 
  * 
- * SIDEBAR ELEMENTS 
+ * SIDEBAR ELEMENTS
  *
  */
 
@@ -323,4 +324,90 @@ ul.iCalEvents span.eventListItemLocation {
     display:block;
     font-style:italic;
     margin-bottom: 0.5em;
+}
+
+/* 
+ *
+ * TWITTER WIDGET 
+ *
+ */
+
+.my_twitter_inner a {
+    color: white;
+}
+
+.my_twitter_inside ul:after {
+    position: absolute;
+    content: " ";
+    bottom: -12px;
+    left: 30px;
+    border-top: 12px solid #ddd;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.my_twitter_inside li {
+    margin: 0;
+    padding:
+    display: block;
+    list-style: none;
+    background: none;
+}
+
+.my_twitter_inside ul:after {
+    position:absolute;
+    content: " ";
+    bottom: -12px;
+    left: 30px;
+    border-top: 12px solid #ddd;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.my_twitter_inside li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none;
+    background: none;
+}
+
+.my_twitter_inside .user_avatar {
+    float: left;
+    height: 48px;.
+    width: 48px;
+    position: relative;
+    margin-right: 0;
+}
+
+.my_twitter_inside .user_avatar a {
+    position: absolute;
+    height:48px;
+    width:48px;
+    border: 2px solid #fff;
+    top: 5px;
+    right: 4px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;.
+    overflow: hidden;
+    -webkit-box-shadow:0 0 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:0 0 2px rgba(0, 0, 0, 0.5);
+    box-shadow:0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.my_twitter_inside .user_avatar a img {
+    border:0 none;max-width: 100%;
+}
+
+#my_twitter_tweetlist {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 1.75em;
+    color: white;
+}
+
+#my_twitter_tweetlist p {
+    visibility: hidden;
 }

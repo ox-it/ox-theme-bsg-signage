@@ -45,8 +45,13 @@
     </div>
     <div id="footer-container">
        <div id="footer">
-         <p>This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! wwwww wwwww WWWWW.
-         <span class="meta">@l0calh0rst</span></p>
+         <!-- <p>This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! wwwww wwwww WWWWW.
+         <span class="meta">@l0calh0rst</span></p> -->
+         <ul id="widgets">
+           <?php if ( !function_exists('dynamic_sidebar') ||
+               !dynamic_sidebar('bottom-sidebar') ) : ?>
+           <?php endif; ?>
+         </ul> 
        </div>	
     </div>	  
 

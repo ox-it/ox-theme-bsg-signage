@@ -14,6 +14,11 @@ class BSG_Theme {
                     'name' => 'Left sidebar',
                     'id' => 'left-sidebar',
                 ));
+                register_sidebar( array( 
+                    'name' => 'Bottom sidebar',
+                    'id' => 'bottom-sidebar',
+                ));
+                
 	}
 
 	// Remove Twenty Eleven's layout and color scheme customizer controls.
