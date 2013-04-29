@@ -11,8 +11,8 @@ class BSG_Theme {
 		// Disable Twenty Eleven's theme options page.
 		remove_action( 'admin_menu', 'twentyeleven_theme_options_add_page' );
                 register_sidebar( array( 
-                    'name' => 'Left sidebar',
-                    'id' => 'left-sidebar',
+                    'name' => 'Right sidebar',
+                    'id' => 'right-sidebar',
                 ));
                 register_sidebar( array( 
                     'name' => 'Bottom sidebar',

@@ -139,12 +139,37 @@ body{
     overflow: hidden;
 }
 
+#footer-container-occupied {
+    //visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    height: 4.5em;
+    padding: 1em 2em;
+    background-color: #e38383;
+    color: red;
+    overflow: hidden;
+}
+
 #footer {
     margin: 0;
     padding: 0;
     display: block;
     font-size: 0.6em;
 }
+
+#footer-occupied {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 1em;
+}
+
 
 #footer span.meta {
     font-size: 0.7em;

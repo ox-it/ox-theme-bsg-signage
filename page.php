@@ -9,12 +9,17 @@
   <div id="container-page">
     <div id="sidebar">
       <div id="sidebar-header">
-	<span id="datetime"><?php echo date('j F, H:i'); ?></span>
+	<span id="datetime">
+	  <?php 
+	      date_default_timezone_set(get_option('timezone_string'));
+	      echo date('j F, H:i'); 
+	  ?>
+	</span>
       </div>
       <div id="infobox-container">
 	<ul id="widgets">
 	<?php if ( !function_exists('dynamic_sidebar') ||
-	      !dynamic_sidebar('left-sidebar') ) : ?>
+	      !dynamic_sidebar('right-sidebar') ) : ?>
 	<?php endif; ?>
 	</ul>
       </div>
@@ -37,26 +42,52 @@
 	
 	<div class="content">
 	  <?php the_content() ?>
+
 	  <div class="clear"></div>
 	</div>
 	
 	<?php if(is_singular()) //comments_template(); ?>
       </div>
     </div>
-    <div id="footer-container">
-       <div id="footer">
-         <!-- <p>This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! This is a sample Tweet! wwwww wwwww WWWWW.
-         <span class="meta">@l0calh0rst</span></p> -->
-         <ul id="widgets">
-           <?php if ( !function_exists('dynamic_sidebar') ||
-               !dynamic_sidebar('bottom-sidebar') ) : ?>
-           <?php endif; ?>
-         </ul> 
+    <!-- <div id="footer-container"> -->
+       <?php
+         // get the location of the page (display)
+         global $wp_query;
+         $pageObject = $wp_query->get_queried_object();
+         $optionsArray = unserialize(get_post_meta($pageObject->ID, 'optionsArray', true));
+         $myLocation = $optionsArray['location'];
+         
+         // check if it is in the currentlyOccupied array
+         global $currentlyOccupied;
+         //$sTMP = 'Currently occupied: ';
+         $isOccupied = 1;
+         foreach($currentlyOccupied as $loc) {
+             //$sTMP .= $loc.', ';
+             $isOccupied *= strcmp($myLocation, $loc);
+         }
+         //error_log($sTMP);
+         
+         if($isOccupied == 0) {
+             echo '	<div id="footer-container-occupied">';
+             echo '		<div id="footer-occupied">';
+             echo '<p> Ongoing event at the '.$myLocation.'. Please do not disturb! Thank you. </p>';
+             echo '		</div>';
+         } else {
+             echo '	<div id="footer-container">';
+             echo '		<div id="footer">';
+             echo '			<ul id="widgets">';
+             if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('bottom-sidebar') ) : endif;
+             echo '			</ul>';
+             echo '			}';
+         }
+       ?>
+          
        </div>	
     </div>	  
 
+  
   </div>
-  <!-- this is required to displaythe admin bar correctly  -->
+  <!-- this is required to display the admin bar correctly  -->
   <?php wp_footer(); ?>
 </body>
 
