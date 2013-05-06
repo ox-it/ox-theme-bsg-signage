@@ -309,7 +309,10 @@ ul#widgets li.widget {
 
 /* 
  *
- * CALENDAR WIDGET 
+ * CALENDAR WIDGET CSS definitions
+ * These definitions are specific to the system deployed
+ * at the Blavatnik School of Government in Oxford.
+ * To use the CSS defined by the widget remove this section.
  *
  */
 
@@ -351,9 +354,13 @@ ul.iCalEvents span.eventListItemLocation {
     margin-bottom: 0.5em;
 }
 
+
 /* 
  *
- * TWITTER WIDGET 
+ * TWITTER WIDGET CSS definitions
+ * These definitions are specific to the system deployed
+ * at the Blavatnik School of Government in Oxford.
+ * To use the CSS defined by the widget remove this section.
  *
  */
 

@@ -62,8 +62,7 @@
          //$sTMP = 'Currently occupied: ';
          $isOccupied = 1;
          foreach($currentlyOccupied as $loc) {
-             //$sTMP .= $loc.', ';
-             $isOccupied *= strcmp($myLocation, $loc);
+             $isOccupied *= ( strcmp($myLocation, $loc) * !empty($loc) );
          }
          //error_log($sTMP);
          
