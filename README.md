@@ -1,5 +1,5 @@
 # ox-theme-bsg-signage
-## Example Theme for a Digital Signage System
+## Theme for a Digital Signage System at the Blavatnik School of Government
 Copyright: [University of Oxford IT Services](http://www.it.ox.ac.uk)  
 Contributors: [Guido Klingbeil](http://www.gklingbeil.net), [Marko Jung](http://mjung.net)  
 Tags: theme, digital signage
@@ -13,12 +13,12 @@ GitHub URI: https://github.com/ox-it/ox-theme-bsg-signage
 
 ## Short Description
 
-A WordPress theme aimed to be used with the [ox-digital-signage](https://github.com/ox-it/ox-digital-signage) plugin. 
+A WordPress theme to be used with the [ox-digital-signage](https://github.com/ox-it/ox-digital-signage) plugin. 
 
 
 ## Description
 
-A WordPress theme aimed to be used with the [ox-digital-signage](https://github.com/ox-it/ox-digital-signage) plugin. This plugin should be used as a scaffolding to implement your own style as it contains copyright protected logos and trademarks of the University of Oxford. 
+A WordPress theme to be used with the [ox-digital-signage](https://github.com/ox-it/ox-digital-signage) plugin. This theme should be used as a scaffolding to implement your own digital signage theme as this one contains copyright protected logos and trademarks of the [University of Oxford](http://www.ox.ac.uk) and implements the corporate identity of the [Blavatnik School of Government](http://www.bsg.ox.ac.uk)
 
 
 ## Installation
