@@ -1,12 +1,11 @@
 /*
-Theme Name: Blavatnik School of Government Digital Signage
-Theme URI: http://
-Description: Minimal them for the digital signage system of the Blavatnik School of Government
-Author: Marko Jung, Guido Klingbeil
-Author URI: http://siteorigin.com/
-Version: 0.0.1
-License: Proprietary
-License URI: http://
+	Theme Name: Blavatnik School of Government Digital Signage
+	Theme URI: FIXME
+	Description: Theme for the digital signage system of the Blavatnik School of Government
+    Author: Oxford University IT Services (Guido Klingbeil, Marko Jung)
+    Author URI: http://www.it.ox.ac.uk
+	Version: 0.2
+	License: Proprietary, all rights reserved
 */
 
 /* =Reset.-------------------------------------------------------------- */
@@ -152,7 +151,7 @@ body{
     height: 4.5em;
     padding: 1em 2em;
     background-color: #e38383;
-    color: red;
+    color: #333;
     overflow: hidden;
 }
 
@@ -168,6 +167,11 @@ body{
     padding: 0;
     display: block;
     font-size: 1em;
+}
+
+
+#footer-occupied p {
+    text-align: center;
 }
 
 

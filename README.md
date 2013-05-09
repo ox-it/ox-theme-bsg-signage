@@ -6,8 +6,7 @@ Tags: theme, digital signage
 Requires at least: 3.1  
 Tested up to: 3.5.1  
 Stable tag: trunk  
-License: GPLv3 or later (with exceptions)
-License URI: http://www.gnu.org/licenses/gpl-3.0.html    
+License: Proprietary, all rights reserved
 GitHub URI: https://github.com/ox-it/ox-theme-bsg-signage
 
 
@@ -34,3 +33,11 @@ This plugin is not published in the official WordPress plugin catalogue yet. If 
 
 All the artwork in the `/images` folder of this theme are copyright protected brands and artwork of the [University of Oxford](http://www.ox.ac.uk). We distribute these files solely for demonstration purposes. All rights reserved.
 
+
+## Changelog 
+
+* 0.2 
+  * bug fixes,
+  * added second widget area and room in use warning.
+* 0.1
+  * initial version.
