@@ -6,7 +6,7 @@ Tags: theme, digital signage
 Requires at least: 3.1  
 Tested up to: 3.5.1  
 Stable tag: trunk  
-License: Proprietary, all rights reserved
+License: Proprietary, all rights reserved  
 GitHub URI: https://github.com/ox-it/ox-theme-bsg-signage
 
 
@@ -17,7 +17,7 @@ A WordPress theme to be used with the [ox-digital-signage](https://github.com/ox
 
 ## Description
 
-A WordPress theme to be used with the [ox-digital-signage](https://github.com/ox-it/ox-digital-signage) plugin. This theme should be used as a scaffolding to implement your own digital signage theme as this one contains copyright protected logos and trademarks of the [University of Oxford](http://www.ox.ac.uk) and implements the corporate identity of the [Blavatnik School of Government](http://www.bsg.ox.ac.uk)
+A WordPress theme to be used with the [ox-digital-signage](https://github.com/ox-it/ox-digital-signage) plugin. This theme should be used as a framework to implement your own digital signage theme as this one contains copyright protected logos and trademarks of the [University of Oxford](http://www.ox.ac.uk) and implements the corporate identity of the [Blavatnik School of Government](http://www.bsg.ox.ac.uk)
 
 
 ## Installation
