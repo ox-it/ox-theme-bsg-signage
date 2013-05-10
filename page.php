@@ -11,8 +11,7 @@
       <div id="sidebar-header">
 	<span id="datetime">
 	  <?php 
-	      date_default_timezone_set(get_option('timezone_string'));
-	      echo date('j F, H:i'); 
+  	      echo date('j F, H:i',current_time('timestamp',0));
 	  ?>
 	</span>
       </div>
