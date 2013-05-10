@@ -1,78 +1,46 @@
-=== Oxford Blavatnik School of Government wordpress theme ===
-Contributors: Guido Klingbeil, Marko Jung
-Tags: custom theme, digital signage
-Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: trunk
-License: GPLv3 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+# ox-theme-bsg-signage
+## Theme for a Digital Signage System at the Blavatnik School of Government
+Copyright: [University of Oxford IT Services](http://www.it.ox.ac.uk)  
+Contributors: [Guido Klingbeil](http://www.gklingbeil.net), [Marko Jung](http://mjung.net)  
+Tags: theme, digital signage
+Requires at least: 3.1  
+Tested up to: 3.5.1  
+Stable tag: trunk  
+License: Proprietary, all rights reserved
+GitHub URI: https://github.com/ox-it/ox-theme-bsg-signage
 
 
-== Short Description ==
+## Short Description
 
-Custom Wordpress theme to match the corporate identity of the Oxford Blavatnik School of Government (BSG).
-
-
-== Description ==
-
-This scheme is part of the Oxford Digital Signage system. It defines two sidebars: one to the right and one on the bottom.
-
-In combination with the ox_calendar plugin this theme implements a rudimentary room "blocking" functionality.
-Each display such as a monitor in front of a lecture room is assigned a category and displays posts (digital signs)
-of theis category. The calendar plugin fills the global variable currentlyOccupied with he locations of currently
-ongoing events. If any of the ongoing events matches the category of the display the bottom sidebar displays a message
-that the room is currently occupied.
-
-The CSS of this theme supports the My Twitter Widget plugin (wordpress.org/extend/plugins/my-twitter-widget/) by
-providing customised CSS code to match the Blavatnik School of Government theme. The indented location to display
-twitter feeds is the bottom sidebar. To display twitter feeds, please at the My Twitter widget to the bootom sidebar via
-the appearence->widgets configuration page of your Wordpress system.
+A WordPress theme to be used with the [ox-digital-signage](https://github.com/ox-it/ox-digital-signage) plugin. 
 
 
-== Notes ==
-This is a minimal theme. If you would like to extend it, or would like us to extend it in later versions, please post feature suggestions in the plugin's [support forum]().
+## Description
 
-== Installation ==
-
-You can install from within WordPress using the Plugin/Add New feature, or if you wish to manually install:
-
-1. Download the theme,
-1. Upload the entire `ox-digital-signage` directory to your themes folder, 
-1. Select the theme in your WordPress theme page,
-1. Start using it.
+A WordPress theme to be used with the [ox-digital-signage](https://github.com/ox-it/ox-digital-signage) plugin. This theme should be used as a scaffolding to implement your own digital signage theme as this one contains copyright protected logos and trademarks of the [University of Oxford](http://www.ox.ac.uk) and implements the corporate identity of the [Blavatnik School of Government](http://www.bsg.ox.ac.uk)
 
 
-== Usage ==
+## Installation
+
+This plugin is not published in the official WordPress plugin catalogue yet. If you wish to manually install it:
+
+1. Download the theme from [GitHub](https://github.com/ox-it/ox-theme-bsg-signage),
+1. Upload the entire `ox-theme-bsg-signage` directory to your WordPress themes folder, 
+1. Activate the theme through the 'Appearance' - 'Themes' menu in WordPress
 
 
-== Screenshots ==
+## Notes
 
-To be done.
-
-
-== Frequently Asked Questions ==
-None yet. We are happy answer any questions to the best of our knowledge though.
+All the artwork in the `/images` folder of this theme are copyright protected brands and artwork of the [University of Oxford](http://www.ox.ac.uk). We distribute these files solely for demonstration purposes. All rights reserved.
 
 
-= What is the point of this plugin? =
+## Changelog 
 
-To create a theme mathich the corporate identity of the Oxford Blavatnik School of Government.
-
-
-== Changelog ==
-
-= 0.0.1 =
-* Initial version.
-
-= 0.0.2 =
-* Room "blocking" support.
-* My Twitter widget CSS support.
-
-= 0.0.3 =
-* Bug fix: the location string is no longer allowed to be empty.
-
-== Road Map ==
-
-1. We are looking forward to get your suggestions.
-
+* 0.3
+  * bug fix: filter empty location string.
+* 0.2 
+  * bug fixes,
+  * added second widget area and room in use warning.
+* 0.1
+  * initial version.
 
