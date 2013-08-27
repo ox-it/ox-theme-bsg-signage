@@ -37,6 +37,7 @@
 	</div>
       </div>
       <div <?php post_class('post') ?> id="content-pane">
+
 	<!-- <h1 class="entry-title noinfo"><?php the_title(); ?></h1> -->
 	
 	<div class="content">
@@ -76,7 +77,7 @@
              echo '			<ul id="widgets">';
              if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('bottom-sidebar') ) : endif;
              echo '			</ul>';
-             echo '			}';
+             //echo '			}';
          }
        ?>
           

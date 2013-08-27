@@ -32,6 +32,27 @@
           <p> Welcome to the Digital signage system. The following signs are currently available:</p>
           <?php wp_page_menu( $args ); ?>
           <p> If you like to change any of these or any setting please <a href="/wp-login.php">login</a></p>
+
+          <?php 
+              // link the documentation
+              $enduser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation.pdf";
+              $poweruser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation.pdf";             
+              $accepted_status_codes = array( 200, 301, 302 );
+
+              echo "<ul>";
+
+              $response = wp_remote_head( $enduser_url, array( 'timeout' => 5 ) );
+              if ( ! is_wp_error( $response ) && in_array( wp_remote_retrieve_response_code( $response ), $accepted_status_codes ) ) {
+                  echo "<li><a href=".$enduser_url.">End user documentation</a>";
+              }
+
+              $response = wp_remote_head( $poweruser_url, array( 'timeout' => 5 ) );
+              if ( ! is_wp_error( $response ) && in_array( wp_remote_retrieve_response_code( $response ), $accepted_status_codes ) ) {
+                  echo "<li><a href=".$enduser_url.">Power user and systems maontainer documentation</a>";
+              }
+
+              echo "</ul>";
+          ?>
       </div>
     </div>
 
