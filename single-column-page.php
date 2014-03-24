@@ -11,7 +11,7 @@
       <div id="sidebar-header">
 	<span id="datetime">
 	  <?php 
-  	      echo date('j F, H:i',current_time('timestamp',0));
+  	      echo date('j F H:i',current_time('timestamp',0));
 	  ?>
 	</span>
       </div>

@@ -9,7 +9,7 @@
   <div id="container-page" class="homepage">
     <div id="sidebar">
       <div id="sidebar-header">
-	<span id="datetime"><?php echo date('j F, H:i'); ?></span>
+	<span id="datetime"><?php echo date('j F H:i'); ?></span>
       </div>
       <div id="infobox-container">
       </div>
