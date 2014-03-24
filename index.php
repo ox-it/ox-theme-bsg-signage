@@ -17,7 +17,7 @@
     <div id="main">
       <div id="main-header">
 	<div id="ox-logo">
-	  <a href="http://www.ox.ac.uk/" title="University of Oxford" id="logo">
+	  <a href="/" title="University of Oxford" id="logo">
 	    <img src="<?php bloginfo('template_directory'); ?>/images/oxford-logo.gif" alt="Home" id="logo">
 	  </a>
 	</div>
@@ -29,35 +29,38 @@
       </div>
       <div id="content-pane">
         <h2> Blavatnik School of Goverment Digital Signage System </h2>
-        <p><a href="/wp-login.php">WordPress login for post management</a>.</p>
+        <ul>
+	  <li><a href="/wp-login.php">WordPress login for post management</a>.</li>
 
-        <p>The following signs are currently available:</p>
-        <?php wp_page_menu( $args ); ?>
+          <li>The following signs are currently available:
+          <?php wp_page_menu( $args ); ?>
+	  </li>
 
-        <?php 
-           // link the documentation
-           $enduser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation.pdf";
-           $poweruser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation.pdf";             
-           $accepted_status_codes = array( 200, 301, 302 );
+          <?php 
+             // link the documentation
+             $enduser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation.pdf";
+             $poweruser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation.pdf";             
+             $accepted_status_codes = array( 200, 301, 302 );
 
-	   echo "<p>System documentation:</p>";
+	     echo "<li>System documentation:";
 
-           echo "<ul>";
+             echo "<ul>";
 
-           $response = wp_remote_head( $enduser_url, array( 'timeout' => 5 ) );
-           if ( ! is_wp_error( $response ) && 
+             $response = wp_remote_head( $enduser_url, array( 'timeout' => 5 ) );
+             if ( ! is_wp_error( $response ) && 
 	          in_array( wp_remote_retrieve_response_code( $response ), $accepted_status_codes ) ) {
-             echo "<li><a href=".$enduser_url.">End user documentation</a>";
-           }
+               echo "<li><a href=".$enduser_url.">End user documentation</a>";
+             }
 
-           $response = wp_remote_head( $poweruser_url, array( 'timeout' => 5 ) );
-           if ( ! is_wp_error( $response ) && 
+             $response = wp_remote_head( $poweruser_url, array( 'timeout' => 5 ) );
+             if ( ! is_wp_error( $response ) && 
                   in_array( wp_remote_retrieve_response_code( $response ), $accepted_status_codes ) ) {
-             echo "<li><a href=".$enduser_url.">Power user and system maintainer documentation</a>";
-           }
+               echo "<li><a href=".$enduser_url.">Power user and system maintainer documentation</a>";
+             }
 
-          echo "</ul>";
-        ?>
+            echo "</ul></li>";
+          ?>
+	  </li>
       </div>
     </div>
   </div>

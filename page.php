@@ -26,7 +26,7 @@
     <div id="main">      
       <div id="main-header">
 	<div id="ox-logo">
-	  <a href="http://www.ox.ac.uk/" title="University of Oxford" id="logo">
+	  <a href="/" title="University of Oxford" id="logo">
 	    <img src="<?php bloginfo('template_directory'); ?>/images/oxford-logo.gif" alt="Home" id="logo">
 	  </a>
 	</div>
