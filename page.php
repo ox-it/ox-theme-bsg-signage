@@ -1,6 +1,6 @@
 <?php
 /*
-   Template Name:  mypage
+   Template Name:  Two Column Page
 */
 ?>
 <?php get_header(); the_post(); ?>
@@ -83,10 +83,5 @@
           
        </div>	
     </div>	  
-
-  
   </div>
-  <!-- this is required to display the admin bar correctly  -->
-  <?php wp_footer(); ?>
-</body>
-
+  <?php get_footer(); ?>

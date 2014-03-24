@@ -83,10 +83,6 @@
           
        </div>	
     </div>	  
-
-  
   </div>
-  <!-- this is required to display the admin bar correctly  -->
-  <?php wp_footer(); ?>
-</body>
+  <?php get_footer(); ?>
 

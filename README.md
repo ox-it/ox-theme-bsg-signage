@@ -36,6 +36,9 @@ All the artwork in the `/images` folder of this theme are copyright protected br
 
 ## Changelog 
 
+* 0.5
+   * Minor style tweaks
+   * Fixed WordPress toolbar display bug on page.php by introducing a footer.php
 * 0.4
    * Added support for fullscreen priority posts and image posts. The plugin supports three types for digital signs: (i) the
     default sign, (ii) a fullscreen priority sign, and (iii) an image sign. A fullscreen priority sign takes the entire screen. 
