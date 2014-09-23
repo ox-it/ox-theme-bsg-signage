@@ -38,24 +38,28 @@
 
           <?php 
              // link the documentation
-             $enduser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation.pdf";
-             $poweruser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation.pdf";             
+             $enduser_url = plugins_url()."/ox-digital-signage/docs/enduser_documentation";
+             $poweruser_url = plugins_url()."/ox-digital-signage/docs/system_maintainer_documentation";             
              $accepted_status_codes = array( 200, 301, 302 );
 
 	     echo "<li>System documentation:";
 
              echo "<ul>";
 
-             $response = wp_remote_head( $enduser_url, array( 'timeout' => 5 ) );
+             $response = wp_remote_head( $enduser_url .".pdf", array( 'timeout' => 5 ) );
              if ( ! is_wp_error( $response ) && 
 	          in_array( wp_remote_retrieve_response_code( $response ), $accepted_status_codes ) ) {
-               echo "<li><a href=".$enduser_url.">End user documentation</a>";
+               echo "<li><a href=".$enduser_url.".html>End user documentation: HTML</a>, ";
+               echo "    <a href=".$enduser_url.".pdf>PDF</a>, ";
+               echo "    <a href=".$enduser_url.".odt>ODT</a>";
              }
 
-             $response = wp_remote_head( $poweruser_url, array( 'timeout' => 5 ) );
+             $response = wp_remote_head( $poweruser_url .".pdf", array( 'timeout' => 5 ) );
              if ( ! is_wp_error( $response ) && 
                   in_array( wp_remote_retrieve_response_code( $response ), $accepted_status_codes ) ) {
-               echo "<li><a href=".$enduser_url.">Power user and system maintainer documentation</a>";
+               echo "<li><a href=".$poweruser_url.".html>Power user and system maintainer documentation: HTML</a>, ";
+               echo "    <a href=".$poweruser_url.".pdf>PDF</a>, ";
+               echo "    <a href=".$poweruser_url.".odt>ODT</a>";
              }
 
             echo "</ul></li>";
