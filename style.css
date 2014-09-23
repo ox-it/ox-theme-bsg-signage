@@ -461,7 +461,11 @@ ul.iCalEvents span.eventListItemLocation {
     margin-bottom: 0.5em;
 }
 
-li.iCalAllDayItem, li.oxCalendar {
+#widgets li.oxCalendar,
+#widgets ul.iCalEvents,
+#widgets ul.iCalEvents li.iCalEventsItem, 
+#widgets ul.iCalEvents li.iCalAllDayItem, 
+#widgets ul.iCalEvents li.oxCalendar {
     list-style-type: none;
 }
 
